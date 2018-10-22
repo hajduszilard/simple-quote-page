@@ -20,3 +20,23 @@ h4 {
   font-size: 1.5rem;
   line-height: 1.5;
 }
+
+@media screen and (max-width: 800px) {
+  .cover {
+  background: url('assets/freedom.jpg') no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  display: table;
+  }
+  h1 {
+	font-size: 0.8rem;
+    line-height: 1.25;
+    margin: 5rem 1rem 1rem;
+  }
+  h4 {
+	font-size: 0.5rem;
+    line-height: 1.5;
+  }
+}
