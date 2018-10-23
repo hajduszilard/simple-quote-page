@@ -1,3 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  font-size: 0;
+}
+
+nav ul {
+  background-color: #eee;
+  text-align: center;
+}
+
+nav li {
+  font-family: 'Anton', sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.25rem;
+  height: 1.25rem;
+  border-bottom: 1px solid #ccc;
+}
+
+nav a {
+  text-decoration: none;
+  color: #C74F78;
+  display: block;
+}
+
+nav a:hover {
+  background-color: #fff;
+  transition: background-color .3s ease-in-out;
+}
+
+nav a.active {
+  background-color: #c74f78;
+  color: #eee;
+}
+
 .cover {
   background: url('assets/freedom.jpg') no-repeat center;
   background-size: cover;
@@ -8,35 +45,45 @@
 }
 
 h1 {
-  font-family: 'Julius Sans One', sans-serif;
-  font-size: 2.5rem;
+  font-size: 0.8rem;
   line-height: 1.25;
-  margin: 10rem 5rem 3rem;
+  margin: 5rem 1rem 1rem;
 }
 
 h4 {
-  font-family: 'Crimson Text', serif;
-  font-style: italic;
-  font-size: 1.5rem;
+  font-size: 0.5rem;
   line-height: 1.5;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 600px) and (min-height: 400px) {
   .cover {
-  background: url('assets/freedom.jpg') no-repeat center;
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
-  text-align: center;
-  display: table;
+    background: url('assets/freedom.jpg') no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    display: table;
   }
+  
+  nav li {
+    display: inline-block;
+    border-bottom: none;
+    width: 7.5rem;
+  }
+
   h1 {
-	font-size: 0.8rem;
+    font-family: 'Julius Sans One', sans-serif; 
+    font-size: 2.5rem;
     line-height: 1.25;
-    margin: 5rem 1rem 1rem;
+    margin: 10rem 5rem 3rem;
   }
+
   h4 {
-	font-size: 0.5rem;
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    font-size: 1.5rem;
     line-height: 1.5;
   }
 }
+
+
